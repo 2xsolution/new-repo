@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-amber-950 text-yellow-100;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-r from-yellow-600 to-amber-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-yellow-500 hover:to-amber-500 transition-all;
+  }
+
+  .card {
+    @apply bg-gradient-to-br from-amber-900/30 to-yellow-900/30 border border-yellow-700/30 rounded-lg;
+  }
+}
